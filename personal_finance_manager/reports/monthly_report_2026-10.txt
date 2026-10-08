@@ -1,0 +1,23 @@
+PERSONAL FINANCE MANAGER - MONTHLY REPORT
+=======================================================
+Month: 2026-10
+Number of expenses: 6
+Total expense: ₹3,170.00
+Average expense: ₹528.33
+
+CATEGORY-WISE EXPENSES
+-----------------------------------
+Bills                ₹1,200.00
+Entertainment        ₹300.00
+Food                 ₹700.00
+Shopping             ₹850.00
+Transport            ₹120.00
+
+EXPENSE DETAILS
+-------------------------------------------------------
+2026-10-01 | Food            | ₹    450.00 | Grocery shopping
+2026-10-02 | Transport       | ₹    120.00 | Bus travel
+2026-10-03 | Entertainment   | ₹    300.00 | Movie
+2026-10-04 | Shopping        | ₹    850.00 | Clothing
+2026-10-05 | Bills           | ₹   1200.00 | Electricity bill
+2026-10-06 | Food            | ₹    250.00 | Lunch

@@ -1,0 +1,144 @@
+1. Project Overview
+The Personal Finance Manager is a Python-based command-line application developed to record, store, search and analyse personal expenses. The system uses object-oriented programming, CSV file handling, input validation, modular programming and basic data analysis.
+
+The main objective is to provide a simple and reliable application through which a user can enter daily expenses and obtain useful financial summaries without requiring a database server or external software.
+
+2. Objectives
+• Develop a practical Python application using object-oriented programming.
+• Store expense information permanently using CSV files.
+• Validate user input and handle common errors.
+• Provide an easy command-line menu.
+• Calculate total, average and category-wise expenses.
+• Generate monthly reports.
+• Provide search functionality.
+• Provide backup and restore operations.
+• Demonstrate modular software organization and unit testing.
+
+3. Scope of the Project
+The application is designed for individual users who want a simple record of personal expenses. It supports common expense categories such as Food, Transport, Entertainment, Shopping, Bills and Other. The system can be extended later with budgets, charts, graphical interfaces, database storage and user authentication.
+
+4. Technologies Used
+Programming Language: Python 3
+Programming Style: Object-Oriented and Modular Programming
+Data Storage: CSV
+Interface: Command-Line Interface (CLI)
+Testing: Python unittest
+Libraries: Python Standard Library (csv, pathlib, shutil, datetime, collections, unittest)
+
+5. System Architecture
+The application follows a modular architecture.
+
+main.py → starts the application
+menu.py → controls the command-line interaction
+expense.py → defines the Expense class
+file_manager.py → manages CSV persistence and backup/restore
+reports.py → performs calculations and report generation
+utils.py → validates input and provides utility functions
+tests/ → contains unit tests
+
+This separation makes the program easier to understand, test, maintain and extend.
+
+6. Data Structure
+Each expense is represented as an Expense object containing:
+• amount – numerical expense value
+• category – expense category
+• date – date in YYYY-MM-DD format
+• description – short description
+
+A Python list stores multiple Expense objects while the CSV file provides permanent storage.
+
+7. Functional Modules
+1. Add Expense: Accepts amount, category, date and description.
+2. View Expenses: Displays all stored expenses.
+3. Category Summary: Calculates category-wise totals.
+4. Monthly Report: Filters expenses by YYYY-MM and generates a text report.
+5. Search: Searches date, category and description.
+6. Backup: Creates a copy of the CSV file.
+7. Restore: Recovers the previous backup.
+8. Exit: Saves data and closes the application.
+
+8. Input Validation and Error Handling
+The application validates positive numerical amounts, permitted categories, valid dates and non-empty descriptions. Invalid menu choices are rejected. CSV loading is protected against file errors and invalid records. Backup and restore operations are also handled using error checks.
+
+9. Algorithms and Calculations
+Total Expense = Sum of all expense amounts
+
+Average Expense = Total Expense / Number of Expenses
+
+Category-wise Expense = Sum of amounts belonging to each category
+
+Monthly Expense = Sum of expenses whose date starts with the selected YYYY-MM value
+
+The category summary uses a dictionary-like grouping structure, while monthly filtering uses string/date-compatible YYYY-MM matching.
+
+10. Sample Data
+The project includes sample records for Food, Transport, Entertainment, Shopping and Bills. These records allow the application to be tested immediately after installation.
+
+11. Testing
+Unit tests are provided in tests/test_expense.py. The tests verify Expense object creation, total expense calculation, average calculation and category-wise calculation.
+
+Run the tests using:
+
+python -m unittest discover -s tests
+
+12. Expected Output
+The program displays a main menu with options for adding expenses, viewing records, generating summaries, creating monthly reports, searching, backing up and restoring data.
+
+Example:
+
+PERSONAL FINANCE MANAGER
+1. Add New Expense
+2. View All Expenses
+3. View Category-wise Summary
+4. Generate Monthly Report
+5. Search Expenses
+6. Backup Data
+7. Restore Data
+8. Exit
+
+13. Advantages
+• Simple and beginner-friendly.
+• No external database is required.
+• Data remains available after restarting the program.
+• Modular source code.
+• Input validation reduces incorrect records.
+• Reports provide useful spending information.
+• Backup protects stored data.
+• Easy to extend with new features.
+
+14. Limitations
+• The application is command-line based.
+• It is designed for a single local user.
+• CSV is less suitable than a database for very large datasets.
+• Advanced visualization is not included in the standard version.
+• No online banking integration is included.
+
+15. Future Enhancements
+Possible improvements include:
+• Monthly and yearly budgets.
+• Graphs and charts using Matplotlib.
+• Excel/PDF export.
+• SQLite database.
+• GUI using Tkinter.
+• Password protection and multiple users.
+• Automatic recurring-expense tracking.
+• Spending trend prediction.
+
+16. Conclusion
+The Personal Finance Manager successfully demonstrates the use of Python classes, lists, dictionaries, CSV file handling, validation, exception handling, modular programming, reporting and testing in a practical application. The project is suitable as a beginner-level Python portfolio or academic submission and provides a strong foundation for adding advanced finance-management features.
+
+17. Submission Checklist
+☑ README.md
+☑ main.py
+☑ requirements.txt
+☑ src/ modules
+☑ data/ sample CSV
+☑ reports/ directory
+☑ backups/ directory
+☑ docs/ user guide
+☑ tests/ unit tests
+☑ screenshots/ directory
+☑ Project report
+☑ Error handling
+☑ CSV persistence
+☑ Backup and restore
